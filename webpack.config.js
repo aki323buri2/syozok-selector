@@ -13,7 +13,7 @@ module.exports = {
 			'[name].css', 
 		), 
 		new HtmlWebpackPlugin({
-			title: 'starter dev', 
+			title: 'syozok-selector dev', 
 		}), 
 	], 
 	module: {

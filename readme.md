@@ -1,9 +1,9 @@
-# [project-name]
+# syozok-selector
 
 ```bash
-git clone /path/to/[project-name].git
+git clone /path/to/syozok-selector.git
 
-cd [project-name]
+cd syozok-selector
 npm install
 npx webpack
 npx webpack --watch -d

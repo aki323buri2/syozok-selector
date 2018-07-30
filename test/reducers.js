@@ -1,5 +1,5 @@
-import starterReducers from '../lib/starterReducers';
+import syozokSelectorReducers from '../lib/syozokSelectorReducers';
 export const reducers = {
-	...starterReducers,  
+	...syozokSelectorReducers,  
 };
 export default reducers;
