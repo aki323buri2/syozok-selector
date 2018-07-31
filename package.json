@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1", 
+    "test": "echo \"Error: no test specified\" && exit 1",
     "release": "npx webpack --config webpack.prod.js"
   },
   "keywords": [],
@@ -12,49 +12,45 @@
   "license": "ISC",
   "devDependencies": {
     "webpack": "^4.16.3",
-    "webpack-cli": "^3.1.0"
-
-    , "extract-text-webpack-plugin": "next"
-    , "html-webpack-plugin": "*"
-    , "clean-webpack-plugin": "*"
-    , "babel-cli": "*"
-    , "babel-preset-env": "*"
-    , "babel-preset-react": "*"
-    , "babel-plugin-transform-runtime": "*"
-    , "babel-plugin-transform-object-rest-spread": "*"
-    , "babel-plugin-transform-decorators-legacy": "*"
-    , "babel-plugin-transform-class-properties": "*"
-    , "babel-loader": "*"
-    , "file-loader": "*"
-    , "style-loader": "*"
-    , "css-loader": "*"
-    , "postcss-loader": "*"
-    , "sass-loader": "*"
-    , "node-sass": "*"
-    , "autoprefixer": "*"
-    , "browser-sync": "*"
-    , "nodemon": "*"
+    "webpack-cli": "^3.1.0",
+    "extract-text-webpack-plugin": "next",
+    "html-webpack-plugin": "*",
+    "clean-webpack-plugin": "*",
+    "babel-cli": "*",
+    "babel-preset-env": "*",
+    "babel-preset-react": "*",
+    "babel-plugin-transform-runtime": "*",
+    "babel-plugin-transform-object-rest-spread": "*",
+    "babel-plugin-transform-decorators-legacy": "*",
+    "babel-plugin-transform-class-properties": "*",
+    "babel-loader": "*",
+    "file-loader": "*",
+    "style-loader": "*",
+    "css-loader": "*",
+    "postcss-loader": "*",
+    "sass-loader": "*",
+    "node-sass": "*",
+    "autoprefixer": "*",
+    "browser-sync": "*",
+    "nodemon": "*"
   },
-
   "dependencies": {
     "react": "^16.4.1",
-    "react-dom": "^16.4.1"
-
-    , "redux": "*"
-    , "redux-saga": "*"
-    , "redux-logger": "*"
-    , "react-redux": "*"
-    , "react-router-dom": "*"
-    , "bulma": "*"
-    , "bulma-extensions": "*"
-    , "@fortawesome/fontawesome-free": "*"
-
-    , "redux-saga-app": "file:../redux-saga-app"
-    , "dom-polyfill": "file:../dom-polyfill"
-
-    , "moment": "*"
-    , "numeral": "*"
-    , "filesize": "*"
-    , "classnames": "*"
+    "react-dom": "^16.4.1",
+    "redux": "*",
+    "redux-saga": "*",
+    "redux-logger": "*",
+    "react-redux": "*",
+    "react-router-dom": "*",
+    "bulma": "*",
+    "bulma-extensions": "*",
+    "@fortawesome/fontawesome-free": "*",
+    "redux-saga-app": "file:../redux-saga-app",
+    "dom-polyfill": "file:../dom-polyfill",
+    "moment": "*",
+    "numeral": "*",
+    "filesize": "*",
+    "classnames": "*",
+    "keycodes": "*"
   }
 }
