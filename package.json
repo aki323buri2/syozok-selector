@@ -45,12 +45,14 @@
     "bulma": "*",
     "bulma-extensions": "*",
     "@fortawesome/fontawesome-free": "*",
-    "redux-saga-app": "file:../redux-saga-app",
-    "dom-polyfill": "file:../dom-polyfill",
     "moment": "*",
     "numeral": "*",
     "filesize": "*",
     "classnames": "*",
-    "keycodes": "*"
+    "keycodes": "*",
+    "redux-saga-app": "file:../../modules/redux-saga-app",
+    "dom-polyfill": "file:../../modules/dom-polyfill",
+    "loading-overlay": "file:../../modules/loading-overlay",
+    "react-transition-group": "*"
   }
 }

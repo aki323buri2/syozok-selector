@@ -1,21 +1,87 @@
 .syozok-selector
 {
-	// border: 1px solid red;
-	
-	
-	.overlay
+	position: relative;
+	.control
 	{
-		&:not(.active)
+		display: inline-block;
+		&.has-icons-left, 
+		&.has-icons-right 
 		{
-			display: none;
+			.input.base-input
+			{
+				width: 200px;
+				padding-left: 5em;
+				position: relative;
+				.syozok-input
+				{
+					border: 1px solid #ccc;
+					position: absolute;
+					left: 2em;
+					top: .3em;
+					width: 2.75em;
+					font-size: 1em;
+					font-family: inherit;
+					padding: 0 5px;
+					border-radius: 3px;
+					line-hgith: 1em;
+				}
+			}
+			.icon.is-left, 
+			.icon.is-right
+			{
+				pointer-events: auto;
+				cursor: pointer;
+			}
 		}
-		position: fixed;
-		z-index: 49;
-		left: 0; 
-		top: 0; 
-		right: 0; 
-		bottom: 0; 
-		background: rgba(#000, .3);
+	}
+	
+	.pending
+	{
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(#000, .5);
+		color: #fff;
+
+		text-align: center;
+		line-height: 2.5em;
+		z-index: 50;
 	}
 
+	.error-message
+	{
+		position: absolute;
+		z-index: 50;
+		width: 400px;
+	}
+
+}
+
+.transition-enter
+{
+	opacity: 0;
+}
+.transition-enter-active
+{
+	opacity: .5;
+	transition: all .5s ease-in;
+}
+.transition-enter-done
+{
+	opacity: 1;
+}
+.transition-exit
+{
+	opacity: 1;
+}
+.transition-exit-active
+{
+	opacity: .5;
+	transition: all .5s ease-out;
+}
+.transition-exit-done
+{
+	opacity: 0;
 }

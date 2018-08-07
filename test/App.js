@@ -12,17 +12,26 @@ export default class App extends React.Component
 	render()
 	{
 		const { buka, syozok } = this.props;
+		const { fetchBukaPending, fetchBukaError } = this.props;
 		return (
 			<div className="app content is-small">
 				
 				<div className="field">
-					<div className="field-title">しょぞく : </div>
+					<div className="field-title">しょぞくせれくたあ : </div>
 					<div className="field-body">
 						<SyozokSelector
 							buka={buka}
 							syozok={syozok}
 							onChange={syozok => this.action('SYOZOK', syozok)}
+							fetchBukaPending={fetchBukaPending}
+							fetchBukaError={fetchBukaError}
 						/>
+					</div>
+				</div>
+
+				<div className="message is-small">
+					<div className="message-body">
+						test
 					</div>
 				</div>
 			</div>

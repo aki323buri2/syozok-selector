@@ -1,0 +1,58 @@
+.syozok-options
+{
+	&:not(.active)
+	{
+		display: none;
+	}
+	z-index: 100;
+	background: #fff;
+	border: 1px solid #ccc;
+	position: absolute;
+	width: 200px;
+	border-radius: 5px;
+	margin-top: 3px;
+
+	.syozok-option 
+	{
+		border: 1px solid #ccc;
+		border-radius: 5px;
+
+		margin: 3px;
+		padding: 3px 1em;
+
+		cursor: pointer;
+		
+		&.selected
+		{
+			background: #ccc;
+			transition: .2s;
+		}
+
+	}
+}
+.syozok-options-transition-enter
+{
+	opacity: 0;
+}
+.syozok-options-transition-enter-active
+{
+	opacity: .5;
+	transition: all .5s ease-in-out;
+}
+.syozok-options-transition-enter-done
+{
+	opacity: 1;
+}
+.syozok-options-transition-exit
+{
+	opacity: 1;
+}
+.syozok-options-transition-exit-active
+{
+	opacity: .5;
+	transition: all .5s ease-in-out;
+}
+.syozok-options-transition-exit-done
+{
+	opacity: 0;
+}
